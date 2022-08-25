@@ -16,6 +16,20 @@
 		FEE0B83D28B76B4900BB043D /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B83C28B76B4900BB043D /* UITableView+Extensions.swift */; };
 		FEE0B83F28B76BEB00BB043D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEE0B83E28B76BEB00BB043D /* Colors.xcassets */; };
 		FEE0B84328B76C3F00BB043D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEE0B84228B76C3F00BB043D /* Images.xcassets */; };
+		FEE0B84628B76D4B00BB043D /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = FEE0B84528B76D4B00BB043D /* swiftgen.yml */; };
+		FEE0B85128B76DC900BB043D /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FEE0B84828B76DC900BB043D /* Inter-Medium.ttf */; };
+		FEE0B85228B76DC900BB043D /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FEE0B84928B76DC900BB043D /* Inter-Light.ttf */; };
+		FEE0B85328B76DC900BB043D /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FEE0B84A28B76DC900BB043D /* Inter-Thin.ttf */; };
+		FEE0B85428B76DC900BB043D /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FEE0B84B28B76DC900BB043D /* Inter-Bold.ttf */; };
+		FEE0B85528B76DC900BB043D /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FEE0B84C28B76DC900BB043D /* Inter-Regular.ttf */; };
+		FEE0B85628B76DC900BB043D /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FEE0B84D28B76DC900BB043D /* Inter-ExtraBold.ttf */; };
+		FEE0B85728B76DC900BB043D /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FEE0B84E28B76DC900BB043D /* Inter-ExtraLight.ttf */; };
+		FEE0B85828B76DC900BB043D /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FEE0B84F28B76DC900BB043D /* Inter-Black.ttf */; };
+		FEE0B85928B76DC900BB043D /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FEE0B85028B76DC900BB043D /* Inter-SemiBold.ttf */; };
+		FEE0B86528B76E8C00BB043D /* UIColor+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B86228B76E8C00BB043D /* UIColor+Colors.swift */; };
+		FEE0B86628B76E8C00BB043D /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B86328B76E8C00BB043D /* Assets.swift */; };
+		FEE0B86728B76E8C00BB043D /* UIImage+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B86428B76E8C00BB043D /* UIImage+Images.swift */; };
+		FEE0B86928B76E9600BB043D /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B86828B76E9600BB043D /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +55,20 @@
 		FEE0B83C28B76B4900BB043D /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		FEE0B83E28B76BEB00BB043D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FEE0B84228B76C3F00BB043D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FEE0B84528B76D4B00BB043D /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		FEE0B84828B76DC900BB043D /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		FEE0B84928B76DC900BB043D /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		FEE0B84A28B76DC900BB043D /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		FEE0B84B28B76DC900BB043D /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		FEE0B84C28B76DC900BB043D /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		FEE0B84D28B76DC900BB043D /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		FEE0B84E28B76DC900BB043D /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		FEE0B84F28B76DC900BB043D /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		FEE0B85028B76DC900BB043D /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		FEE0B86228B76E8C00BB043D /* UIColor+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Colors.swift"; sourceTree = "<group>"; };
+		FEE0B86328B76E8C00BB043D /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		FEE0B86428B76E8C00BB043D /* UIImage+Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Images.swift"; sourceTree = "<group>"; };
+		FEE0B86828B76E9600BB043D /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +112,7 @@
 		FEE0B7F028B769B600BB043D = {
 			isa = PBXGroup;
 			children = (
+				FEE0B84528B76D4B00BB043D /* swiftgen.yml */,
 				FEE0B7FC28B769B600BB043D /* UIComponents */,
 				FEE0B80628B769B700BB043D /* UIComponentsTests */,
 				FEE0B7FB28B769B600BB043D /* Products */,
@@ -149,6 +178,9 @@
 		FEE0B84028B76C1F00BB043D /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				FEE0B86328B76E8C00BB043D /* Assets.swift */,
+				FEE0B86228B76E8C00BB043D /* UIColor+Colors.swift */,
+				FEE0B86428B76E8C00BB043D /* UIImage+Images.swift */,
 				FEE0B83E28B76BEB00BB043D /* Colors.xcassets */,
 				FEE0B84228B76C3F00BB043D /* Images.xcassets */,
 			);
@@ -158,8 +190,26 @@
 		FEE0B84428B76C4B00BB043D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				FEE0B86828B76E9600BB043D /* Fonts.swift */,
+				FEE0B84728B76DC900BB043D /* Inter */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FEE0B84728B76DC900BB043D /* Inter */ = {
+			isa = PBXGroup;
+			children = (
+				FEE0B84828B76DC900BB043D /* Inter-Medium.ttf */,
+				FEE0B84928B76DC900BB043D /* Inter-Light.ttf */,
+				FEE0B84A28B76DC900BB043D /* Inter-Thin.ttf */,
+				FEE0B84B28B76DC900BB043D /* Inter-Bold.ttf */,
+				FEE0B84C28B76DC900BB043D /* Inter-Regular.ttf */,
+				FEE0B84D28B76DC900BB043D /* Inter-ExtraBold.ttf */,
+				FEE0B84E28B76DC900BB043D /* Inter-ExtraLight.ttf */,
+				FEE0B84F28B76DC900BB043D /* Inter-Black.ttf */,
+				FEE0B85028B76DC900BB043D /* Inter-SemiBold.ttf */,
+			);
+			path = Inter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +235,7 @@
 				FEE0B7F628B769B600BB043D /* Sources */,
 				FEE0B7F728B769B600BB043D /* Frameworks */,
 				FEE0B7F828B769B600BB043D /* Resources */,
+				FEE0B85A28B76E0E00BB043D /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -256,7 +307,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE0B85928B76DC900BB043D /* Inter-SemiBold.ttf in Resources */,
+				FEE0B85228B76DC900BB043D /* Inter-Light.ttf in Resources */,
+				FEE0B85728B76DC900BB043D /* Inter-ExtraLight.ttf in Resources */,
+				FEE0B85128B76DC900BB043D /* Inter-Medium.ttf in Resources */,
+				FEE0B85628B76DC900BB043D /* Inter-ExtraBold.ttf in Resources */,
+				FEE0B85328B76DC900BB043D /* Inter-Thin.ttf in Resources */,
+				FEE0B85428B76DC900BB043D /* Inter-Bold.ttf in Resources */,
+				FEE0B85828B76DC900BB043D /* Inter-Black.ttf in Resources */,
 				FEE0B83F28B76BEB00BB043D /* Colors.xcassets in Resources */,
+				FEE0B84628B76D4B00BB043D /* swiftgen.yml in Resources */,
+				FEE0B85528B76DC900BB043D /* Inter-Regular.ttf in Resources */,
 				FEE0B84328B76C3F00BB043D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +354,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FEE0B85A28B76E0E00BB043D /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -300,9 +379,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE0B86928B76E9600BB043D /* Fonts.swift in Sources */,
 				FEE0B83D28B76B4900BB043D /* UITableView+Extensions.swift in Sources */,
+				FEE0B86528B76E8C00BB043D /* UIColor+Colors.swift in Sources */,
 				FEE0B83B28B76B4100BB043D /* UICollectionView+Extensions.swift in Sources */,
+				FEE0B86628B76E8C00BB043D /* Assets.swift in Sources */,
 				FEE0B83728B76AFA00BB043D /* ReusableView.swift in Sources */,
+				FEE0B86728B76E8C00BB043D /* UIImage+Images.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

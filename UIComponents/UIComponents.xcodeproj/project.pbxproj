@@ -30,6 +30,7 @@
 		FEE0B86628B76E8C00BB043D /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B86328B76E8C00BB043D /* Assets.swift */; };
 		FEE0B86728B76E8C00BB043D /* UIImage+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B86428B76E8C00BB043D /* UIImage+Images.swift */; };
 		FEE0B86928B76E9600BB043D /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B86828B76E9600BB043D /* Fonts.swift */; };
+		FEE0B86B28B7706800BB043D /* Fonts+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B86A28B7706800BB043D /* Fonts+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		FEE0B86328B76E8C00BB043D /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		FEE0B86428B76E8C00BB043D /* UIImage+Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Images.swift"; sourceTree = "<group>"; };
 		FEE0B86828B76E9600BB043D /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		FEE0B86A28B7706800BB043D /* Fonts+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 			children = (
 				FEE0B86828B76E9600BB043D /* Fonts.swift */,
 				FEE0B84728B76DC900BB043D /* Inter */,
+				FEE0B86A28B7706800BB043D /* Fonts+Ext.swift */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE0B86B28B7706800BB043D /* Fonts+Ext.swift in Sources */,
 				FEE0B86928B76E9600BB043D /* Fonts.swift in Sources */,
 				FEE0B83D28B76B4900BB043D /* UITableView+Extensions.swift in Sources */,
 				FEE0B86528B76E8C00BB043D /* UIColor+Colors.swift in Sources */,

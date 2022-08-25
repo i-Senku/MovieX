@@ -1,0 +1,29 @@
+PODS:
+  - Kingfisher (6.3.1)
+  - TinyConstraints (4.0.2)
+
+DEPENDENCIES:
+  - Kingfisher (from `https://github.com/onevcat/Kingfisher`, branch `version6-xcode13`)
+  - TinyConstraints (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - TinyConstraints
+
+EXTERNAL SOURCES:
+  Kingfisher:
+    :branch: version6-xcode13
+    :git: https://github.com/onevcat/Kingfisher
+
+CHECKOUT OPTIONS:
+  Kingfisher:
+    :commit: d0494dd78f7adf2d3526fdf3267176553020c041
+    :git: https://github.com/onevcat/Kingfisher
+
+SPEC CHECKSUMS:
+  Kingfisher: 8b783c3d7be73a99b2172a743a5bc0a4dd331d79
+  TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
+
+PODFILE CHECKSUM: 2ea5dff70835f43a041dfdd034d21e6b93976a8c
+
+COCOAPODS: 1.11.3

@@ -30,6 +30,7 @@
 		FEE0B8A028BA40B400BB043D /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B89D28BA40B400BB043D /* HomeRouter.swift */; };
 		FEE0B8A128BA40B400BB043D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B89E28BA40B400BB043D /* HomeViewController.swift */; };
 		FEE0B8A228BA40B400BB043D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B89F28BA40B400BB043D /* HomeViewModel.swift */; };
+		FEE0B8A828BA439000BB043D /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = FEE0B8A728BA439000BB043D /* loading.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,6 +74,7 @@
 		FEE0B89D28BA40B400BB043D /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		FEE0B89E28BA40B400BB043D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FEE0B89F28BA40B400BB043D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FEE0B8A728BA439000BB043D /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 		FE5C2A5828B690D100C2838A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FEE0B8A628BA438700BB043D /* Lottie */,
 				FE5C2A4C28B6900F00C2838A /* Assets.xcassets */,
 				FE5C2A4E28B6900F00C2838A /* LaunchScreen.storyboard */,
 			);
@@ -248,6 +251,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		FEE0B8A628BA438700BB043D /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				FEE0B8A728BA439000BB043D /* loading.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -310,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE5C2A5028B6900F00C2838A /* LaunchScreen.storyboard in Resources */,
+				FEE0B8A828BA439000BB043D /* loading.json in Resources */,
 				FEE0B89528BA206400BB043D /* GoogleService-Info.plist in Resources */,
 				FE5C2A4D28B6900F00C2838A /* Assets.xcassets in Resources */,
 			);

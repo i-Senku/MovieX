@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let bounds = UIScreen.main.bounds
         self.window = UIWindow(frame: bounds)
+        window?.makeKeyAndVisible()
         app.router.window = window
         app.router.start()
         return true

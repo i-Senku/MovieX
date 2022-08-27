@@ -62,8 +62,10 @@ extension SplashViewModel {
 extension SplashViewModel {
     
     private func fetchRemoteConfig() {
+        showLoading?()
         remoteConfig?.fetch { [weak self] (status, error) -> Void in
             guard let self = self else { return }
+            self.hideLoading?()
             if status == .success {
                 self.remoteConfig?.activate { changed, error in
                     guard error == nil else {

@@ -50,11 +50,17 @@ class BaseViewController<V: BaseViewModelProtocol>: UIViewController {
 extension BaseViewController {
     
     private func subscribeLoading() {
-        viewModel.showLoading = {
-            let window = UIApplication.shared.windows.first
+        viewModel.showLoading = { [weak self] in
+            guard let self = self else { return }
+            let loadingView = MovieXLoadingView()
+            loadingView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            loadingView.frame = self.view.bounds
+            self.view.addSubview(loadingView)
         }
-        viewModel.hideLoading = {
-            let window = UIApplication.shared.windows.first
+        
+        viewModel.hideLoading = { [weak self] in
+            guard let self = self else { return }
+            self.view.subviews.filter({ $0 is MovieXLoadingView }).forEach({ $0.removeFromSuperview() })
         }
     }
 }

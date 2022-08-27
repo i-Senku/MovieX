@@ -26,10 +26,10 @@ public enum OmdbAPI : BaseClientGenerator {
     
     //MARK: - Query Items
     public var queryItems: [URLQueryItem]?{
-        var items: [URLQueryItem]?
+        var items: [URLQueryItem] = [.init(name: "apiKey", value: RemoteConstants.apiKey)]
         switch self {
         case .search(let text):
-            items?.append(.init(name: "s", value: text))
+            items.append(.init(name: "s", value: text))
         }
         return items
     }

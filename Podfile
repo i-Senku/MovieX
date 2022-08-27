@@ -17,6 +17,17 @@ target 'MovieX' do
   # Pods for MovieX
   global_pods
 
+  # Network
+  pod 'Alamofire', '~> 5.4'
+
+  # UI
+  pod 'SwiftEntryKit', '2.0.0'
+  pod 'lottie-ios'
+
+  # Helper
+  pod 'Firebase/RemoteConfig'
+  pod 'Firebase/Core'
+
 end
 
 target 'UIComponents' do
@@ -28,6 +39,9 @@ target 'UIComponents' do
   
   # Generater
   pod 'SwiftGen', '~> 6.5.1'
+ 
+  # UI
+  pod 'lottie-ios'
 
 end
 

@@ -33,6 +33,8 @@ class BaseViewController<V: BaseViewModelProtocol>: UIViewController {
     private func configureContents() {
         self.tabBarController?.tabBar.isTranslucent = true
         view.backgroundColor = .appDark
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.appWhite]
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

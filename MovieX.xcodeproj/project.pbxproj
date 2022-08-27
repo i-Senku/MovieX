@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0C31BA1FADA1839C9ABCAABF /* Pods_MovieX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3BCFA481F55BF24BA4C1EE /* Pods_MovieX.framework */; };
 		FE5C2A4128B6900E00C2838A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5C2A4028B6900E00C2838A /* AppDelegate.swift */; };
-		FE5C2A4328B6900E00C2838A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5C2A4228B6900E00C2838A /* SceneDelegate.swift */; };
 		FE5C2A4B28B6900E00C2838A /* MovieX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE5C2A4928B6900E00C2838A /* MovieX.xcdatamodeld */; };
 		FE5C2A4D28B6900F00C2838A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE5C2A4C28B6900F00C2838A /* Assets.xcassets */; };
 		FE5C2A5028B6900F00C2838A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE5C2A4E28B6900F00C2838A /* LaunchScreen.storyboard */; };
@@ -20,6 +19,12 @@
 		FEE0B85D28B76E4700BB043D /* DataProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FEE0B85B28B76E4700BB043D /* DataProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FEE0B86028B76E4A00BB043D /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEE0B85F28B76E4A00BB043D /* UIComponents.framework */; };
 		FEE0B86128B76E4A00BB043D /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FEE0B85F28B76E4A00BB043D /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FEE0B88228BA02F700BB043D /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B87F28BA02F700BB043D /* SplashRouter.swift */; };
+		FEE0B88328BA02F700BB043D /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B88028BA02F700BB043D /* SplashViewController.swift */; };
+		FEE0B88428BA02F700BB043D /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B88128BA02F700BB043D /* SplashViewModel.swift */; };
+		FEE0B88828BA042E00BB043D /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B88728BA042E00BB043D /* AppRouter.swift */; };
+		FEE0B88A28BA04B500BB043D /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B88928BA04B500BB043D /* AppContainer.swift */; };
+		FEE0B88C28BA065400BB043D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B88B28BA065400BB043D /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,7 +48,6 @@
 		F2B186151EBE6226F4C2A3C8 /* Pods-MovieX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieX.release.xcconfig"; path = "Target Support Files/Pods-MovieX/Pods-MovieX.release.xcconfig"; sourceTree = "<group>"; };
 		FE5C2A3D28B6900E00C2838A /* MovieX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5C2A4028B6900E00C2838A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE5C2A4228B6900E00C2838A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FE5C2A4A28B6900E00C2838A /* MovieX.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieX.xcdatamodel; sourceTree = "<group>"; };
 		FE5C2A4C28B6900F00C2838A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE5C2A4F28B6900F00C2838A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +57,12 @@
 		FE889B7228B7644400D97D6A /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
 		FEE0B85B28B76E4700BB043D /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE0B85F28B76E4A00BB043D /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEE0B87F28BA02F700BB043D /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		FEE0B88028BA02F700BB043D /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		FEE0B88128BA02F700BB043D /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		FEE0B88728BA042E00BB043D /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		FEE0B88928BA04B500BB043D /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		FEE0B88B28BA065400BB043D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +119,8 @@
 		FE5C2A3F28B6900E00C2838A /* MovieX */ = {
 			isa = PBXGroup;
 			children = (
+				FEE0B88628BA042800BB043D /* App */,
 				FE889B7128B7643700D97D6A /* Constants */,
-				FE5C2A6128B6912000C2838A /* Base */,
 				FE5C2A5928B690DE00C2838A /* Configuration */,
 				FE5C2A5828B690D100C2838A /* Resources */,
 				FE5C2A5728B690C500C2838A /* Scene */,
@@ -121,6 +131,8 @@
 		FE5C2A5728B690C500C2838A /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				FE5C2A6128B6912000C2838A /* Base */,
+				FEE0B87E28BA02DA00BB043D /* Splash */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -137,8 +149,8 @@
 		FE5C2A5928B690DE00C2838A /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				FEE0B88B28BA065400BB043D /* SceneDelegate.swift */,
 				FE5C2A4028B6900E00C2838A /* AppDelegate.swift */,
-				FE5C2A4228B6900E00C2838A /* SceneDelegate.swift */,
 				FE5C2A5128B6900F00C2838A /* Info.plist */,
 				FE5C2A4928B6900E00C2838A /* MovieX.xcdatamodeld */,
 			);
@@ -176,6 +188,25 @@
 				FE889B7228B7644400D97D6A /* Closures.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		FEE0B87E28BA02DA00BB043D /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				FEE0B87F28BA02F700BB043D /* SplashRouter.swift */,
+				FEE0B88028BA02F700BB043D /* SplashViewController.swift */,
+				FEE0B88128BA02F700BB043D /* SplashViewModel.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		FEE0B88628BA042800BB043D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FEE0B88728BA042E00BB043D /* AppRouter.swift */,
+				FEE0B88928BA04B500BB043D /* AppContainer.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,10 +326,15 @@
 			files = (
 				FE5C2A4128B6900E00C2838A /* AppDelegate.swift in Sources */,
 				FE889B7328B7644400D97D6A /* Closures.swift in Sources */,
-				FE5C2A4328B6900E00C2838A /* SceneDelegate.swift in Sources */,
+				FEE0B88228BA02F700BB043D /* SplashRouter.swift in Sources */,
+				FEE0B88428BA02F700BB043D /* SplashViewModel.swift in Sources */,
 				FE5C2A4B28B6900E00C2838A /* MovieX.xcdatamodeld in Sources */,
+				FEE0B88A28BA04B500BB043D /* AppContainer.swift in Sources */,
 				FE5C2A6728B691A300C2838A /* BaseViewModel.swift in Sources */,
+				FEE0B88C28BA065400BB043D /* SceneDelegate.swift in Sources */,
 				FE5C2A6528B6915400C2838A /* BaseViewController.swift in Sources */,
+				FEE0B88828BA042E00BB043D /* AppRouter.swift in Sources */,
+				FEE0B88328BA02F700BB043D /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

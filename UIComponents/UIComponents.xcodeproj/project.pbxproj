@@ -31,6 +31,7 @@
 		FEE0B86728B76E8C00BB043D /* UIImage+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B86428B76E8C00BB043D /* UIImage+Images.swift */; };
 		FEE0B86928B76E9600BB043D /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B86828B76E9600BB043D /* Fonts.swift */; };
 		FEE0B86B28B7706800BB043D /* Fonts+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B86A28B7706800BB043D /* Fonts+Ext.swift */; };
+		FEE0B8A528BA429800BB043D /* MovieXLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8A428BA429800BB043D /* MovieXLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		FEE0B86428B76E8C00BB043D /* UIImage+Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Images.swift"; sourceTree = "<group>"; };
 		FEE0B86828B76E9600BB043D /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		FEE0B86A28B7706800BB043D /* Fonts+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+Ext.swift"; sourceTree = "<group>"; };
+		FEE0B8A428BA429800BB043D /* MovieXLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieXLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 		FEE0B7FC28B769B600BB043D /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				FEE0B8A328BA428800BB043D /* UIView */,
 				FEE0B83528B76AED00BB043D /* Protocols */,
 				FEE0B83928B76B2600BB043D /* Extensions */,
 				FEE0B83828B76B1F00BB043D /* Resources */,
@@ -213,6 +216,14 @@
 				FEE0B85028B76DC900BB043D /* Inter-SemiBold.ttf */,
 			);
 			path = Inter;
+			sourceTree = "<group>";
+		};
+		FEE0B8A328BA428800BB043D /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				FEE0B8A428BA429800BB043D /* MovieXLoadingView.swift */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,6 +398,7 @@
 				FEE0B83D28B76B4900BB043D /* UITableView+Extensions.swift in Sources */,
 				FEE0B86528B76E8C00BB043D /* UIColor+Colors.swift in Sources */,
 				FEE0B83B28B76B4100BB043D /* UICollectionView+Extensions.swift in Sources */,
+				FEE0B8A528BA429800BB043D /* MovieXLoadingView.swift in Sources */,
 				FEE0B86628B76E8C00BB043D /* Assets.swift in Sources */,
 				FEE0B83728B76AFA00BB043D /* ReusableView.swift in Sources */,
 				FEE0B86728B76E8C00BB043D /* UIImage+Images.swift in Sources */,

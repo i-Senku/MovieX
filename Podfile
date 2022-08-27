@@ -39,6 +39,9 @@ target 'UIComponents' do
   
   # Generater
   pod 'SwiftGen', '~> 6.5.1'
+ 
+  # UI
+  pod 'lottie-ios'
 
 end
 

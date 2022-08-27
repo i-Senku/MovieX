@@ -11,6 +11,13 @@
 		FEE0B82528B769C900BB043D /* DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEE0B81C28B769C900BB043D /* DataProvider.framework */; };
 		FEE0B82A28B769C900BB043D /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B82928B769C900BB043D /* DataProviderTests.swift */; };
 		FEE0B82B28B769C900BB043D /* DataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE0B81F28B769C900BB043D /* DataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEE0B86F28B9FDFB00BB043D /* HttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B86E28B9FDFB00BB043D /* HttpHeader.swift */; };
+		FEE0B87128B9FE0300BB043D /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B87028B9FE0300BB043D /* HttpMethod.swift */; };
+		FEE0B87328B9FE1300BB043D /* NetworkContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B87228B9FE1300BB043D /* NetworkContracts.swift */; };
+		FEE0B87528B9FE2200BB043D /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B87428B9FE2200BB043D /* NetworkError.swift */; };
+		FEE0B87728B9FE2E00BB043D /* NetworkExecuter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B87628B9FE2E00BB043D /* NetworkExecuter.swift */; };
+		FEE0B87A28B9FF0100BB043D /* RemoteConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B87928B9FF0100BB043D /* RemoteConstants.swift */; };
+		FEE0B87D28BA001A00BB043D /* OmdbClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B87C28BA001A00BB043D /* OmdbClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +38,13 @@
 		FEE0B81F28B769C900BB043D /* DataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataProvider.h; sourceTree = "<group>"; };
 		FEE0B82428B769C900BB043D /* DataProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE0B82928B769C900BB043D /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
+		FEE0B86E28B9FDFB00BB043D /* HttpHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHeader.swift; sourceTree = "<group>"; };
+		FEE0B87028B9FE0300BB043D /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		FEE0B87228B9FE1300BB043D /* NetworkContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkContracts.swift; sourceTree = "<group>"; };
+		FEE0B87428B9FE2200BB043D /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		FEE0B87628B9FE2E00BB043D /* NetworkExecuter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExecuter.swift; sourceTree = "<group>"; };
+		FEE0B87928B9FF0100BB043D /* RemoteConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConstants.swift; sourceTree = "<group>"; };
+		FEE0B87C28BA001A00BB043D /* OmdbClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmdbClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,9 @@
 		FEE0B81E28B769C900BB043D /* DataProvider */ = {
 			isa = PBXGroup;
 			children = (
+				FEE0B87B28B9FFFB00BB043D /* Clients */,
+				FEE0B87828B9FEDB00BB043D /* Constants */,
+				FEE0B86D28B9FDAB00BB043D /* Network */,
 				FEE0B81F28B769C900BB043D /* DataProvider.h */,
 			);
 			path = DataProvider;
@@ -105,6 +122,34 @@
 				FEE0B82928B769C900BB043D /* DataProviderTests.swift */,
 			);
 			path = DataProviderTests;
+			sourceTree = "<group>";
+		};
+		FEE0B86D28B9FDAB00BB043D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FEE0B86E28B9FDFB00BB043D /* HttpHeader.swift */,
+				FEE0B87028B9FE0300BB043D /* HttpMethod.swift */,
+				FEE0B87228B9FE1300BB043D /* NetworkContracts.swift */,
+				FEE0B87428B9FE2200BB043D /* NetworkError.swift */,
+				FEE0B87628B9FE2E00BB043D /* NetworkExecuter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FEE0B87828B9FEDB00BB043D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FEE0B87928B9FF0100BB043D /* RemoteConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FEE0B87B28B9FFFB00BB043D /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				FEE0B87C28BA001A00BB043D /* OmdbClient.swift */,
+			);
+			path = Clients;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +215,7 @@
 				TargetAttributes = {
 					FEE0B81B28B769C900BB043D = {
 						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
 					};
 					FEE0B82328B769C900BB043D = {
 						CreatedOnToolsVersion = 13.3;
@@ -242,6 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE0B87328B9FE1300BB043D /* NetworkContracts.swift in Sources */,
+				FEE0B87D28BA001A00BB043D /* OmdbClient.swift in Sources */,
+				FEE0B87528B9FE2200BB043D /* NetworkError.swift in Sources */,
+				FEE0B87128B9FE0300BB043D /* HttpMethod.swift in Sources */,
+				FEE0B87A28B9FF0100BB043D /* RemoteConstants.swift in Sources */,
+				FEE0B87728B9FE2E00BB043D /* NetworkExecuter.swift in Sources */,
+				FEE0B86F28B9FDFB00BB043D /* HttpHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BA6959F62BE6CFD5F1A0FE89 /* Pods-DataProvider.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -408,6 +462,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -417,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 30F19BF62BFB9B66594F84FE /* Pods-DataProvider.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -445,6 +501,7 @@
 		FEE0B83228B769C900BB043D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B25V49FA8N;
@@ -461,6 +518,7 @@
 		FEE0B83328B769C900BB043D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B25V49FA8N;

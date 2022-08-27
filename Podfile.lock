@@ -1,13 +1,19 @@
 PODS:
+  - Alamofire (5.6.2)
   - Kingfisher (6.3.1)
+  - SwiftGen (6.5.1)
   - TinyConstraints (4.0.2)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.4)
   - Kingfisher (from `https://github.com/onevcat/Kingfisher`, branch `version6-xcode13`)
+  - SwiftGen (~> 6.5.1)
   - TinyConstraints (~> 4.0)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - SwiftGen
     - TinyConstraints
 
 EXTERNAL SOURCES:
@@ -21,9 +27,11 @@ CHECKOUT OPTIONS:
     :git: https://github.com/onevcat/Kingfisher
 
 SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   Kingfisher: 8b783c3d7be73a99b2172a743a5bc0a4dd331d79
+  SwiftGen: a6d22010845f08fe18fbdf3a07a8e380fd22e0ea
   TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
 
-PODFILE CHECKSUM: 2ea5dff70835f43a041dfdd034d21e6b93976a8c
+PODFILE CHECKSUM: 0a6428d1852ca74e28ab813c844fd2bc3b315634
 
 COCOAPODS: 1.11.3

@@ -24,7 +24,12 @@
 		FEE0B88428BA02F700BB043D /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B88128BA02F700BB043D /* SplashViewModel.swift */; };
 		FEE0B88828BA042E00BB043D /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B88728BA042E00BB043D /* AppRouter.swift */; };
 		FEE0B88A28BA04B500BB043D /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B88928BA04B500BB043D /* AppContainer.swift */; };
-		FEE0B88C28BA065400BB043D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B88B28BA065400BB043D /* SceneDelegate.swift */; };
+		FEE0B89528BA206400BB043D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEE0B89428BA206400BB043D /* GoogleService-Info.plist */; };
+		FEE0B89828BA20CA00BB043D /* AppDelegate+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B89728BA20CA00BB043D /* AppDelegate+Firebase.swift */; };
+		FEE0B89B28BA2BDF00BB043D /* EntryKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B89A28BA2BDF00BB043D /* EntryKitHelper.swift */; };
+		FEE0B8A028BA40B400BB043D /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B89D28BA40B400BB043D /* HomeRouter.swift */; };
+		FEE0B8A128BA40B400BB043D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B89E28BA40B400BB043D /* HomeViewController.swift */; };
+		FEE0B8A228BA40B400BB043D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B89F28BA40B400BB043D /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,7 +67,12 @@
 		FEE0B88128BA02F700BB043D /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		FEE0B88728BA042E00BB043D /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		FEE0B88928BA04B500BB043D /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
-		FEE0B88B28BA065400BB043D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FEE0B89428BA206400BB043D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FEE0B89728BA20CA00BB043D /* AppDelegate+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Firebase.swift"; sourceTree = "<group>"; };
+		FEE0B89A28BA2BDF00BB043D /* EntryKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryKitHelper.swift; sourceTree = "<group>"; };
+		FEE0B89D28BA40B400BB043D /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		FEE0B89E28BA40B400BB043D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FEE0B89F28BA40B400BB043D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				FEE0B88628BA042800BB043D /* App */,
+				FEE0B89928BA2BAC00BB043D /* Helper */,
 				FE889B7128B7643700D97D6A /* Constants */,
 				FE5C2A5928B690DE00C2838A /* Configuration */,
 				FE5C2A5828B690D100C2838A /* Resources */,
@@ -132,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				FE5C2A6128B6912000C2838A /* Base */,
+				FEE0B89C28BA40A500BB043D /* Home */,
 				FEE0B87E28BA02DA00BB043D /* Splash */,
 			);
 			path = Scene;
@@ -149,8 +161,8 @@
 		FE5C2A5928B690DE00C2838A /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				FEE0B88B28BA065400BB043D /* SceneDelegate.swift */,
-				FE5C2A4028B6900E00C2838A /* AppDelegate.swift */,
+				FEE0B89628BA20BD00BB043D /* AppDelegate */,
+				FEE0B89428BA206400BB043D /* GoogleService-Info.plist */,
 				FE5C2A5128B6900F00C2838A /* Info.plist */,
 				FE5C2A4928B6900E00C2838A /* MovieX.xcdatamodeld */,
 			);
@@ -207,6 +219,33 @@
 				FEE0B88928BA04B500BB043D /* AppContainer.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		FEE0B89628BA20BD00BB043D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FE5C2A4028B6900E00C2838A /* AppDelegate.swift */,
+				FEE0B89728BA20CA00BB043D /* AppDelegate+Firebase.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FEE0B89928BA2BAC00BB043D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FEE0B89A28BA2BDF00BB043D /* EntryKitHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FEE0B89C28BA40A500BB043D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FEE0B89D28BA40B400BB043D /* HomeRouter.swift */,
+				FEE0B89E28BA40B400BB043D /* HomeViewController.swift */,
+				FEE0B89F28BA40B400BB043D /* HomeViewModel.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE5C2A5028B6900F00C2838A /* LaunchScreen.storyboard in Resources */,
+				FEE0B89528BA206400BB043D /* GoogleService-Info.plist in Resources */,
 				FE5C2A4D28B6900F00C2838A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,12 +368,16 @@
 				FE889B7328B7644400D97D6A /* Closures.swift in Sources */,
 				FEE0B88228BA02F700BB043D /* SplashRouter.swift in Sources */,
 				FEE0B88428BA02F700BB043D /* SplashViewModel.swift in Sources */,
+				FEE0B89B28BA2BDF00BB043D /* EntryKitHelper.swift in Sources */,
+				FEE0B8A128BA40B400BB043D /* HomeViewController.swift in Sources */,
 				FE5C2A4B28B6900E00C2838A /* MovieX.xcdatamodeld in Sources */,
+				FEE0B8A028BA40B400BB043D /* HomeRouter.swift in Sources */,
+				FEE0B89828BA20CA00BB043D /* AppDelegate+Firebase.swift in Sources */,
 				FEE0B88A28BA04B500BB043D /* AppContainer.swift in Sources */,
 				FE5C2A6728B691A300C2838A /* BaseViewModel.swift in Sources */,
-				FEE0B88C28BA065400BB043D /* SceneDelegate.swift in Sources */,
 				FE5C2A6528B6915400C2838A /* BaseViewController.swift in Sources */,
 				FEE0B88828BA042E00BB043D /* AppRouter.swift in Sources */,
+				FEE0B8A228BA40B400BB043D /* HomeViewModel.swift in Sources */,
 				FEE0B88328BA02F700BB043D /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

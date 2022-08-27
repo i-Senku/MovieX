@@ -19,6 +19,5 @@ final class AppRouter {
         }
         let viewController = SplashRouter.create()
         window.rootViewController = viewController
-        window.makeKeyAndVisible()
     }
 }

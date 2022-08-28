@@ -1,6 +1,6 @@
-# MoviesApp-Challenge
+# MovieX
 
-It's Movie app that using the TheMovieDB API.
+It's Movie app that using the OMDB API.
 
 # Pods
 

@@ -10,7 +10,7 @@ import Foundation
 public enum OmdbAPI : BaseClientGenerator {
     
     // MARK: - Requests
-    case search(text: String)
+    case search(text: String, page: Int)
     
     public var scheme: String { "https" }
     
@@ -20,7 +20,7 @@ public enum OmdbAPI : BaseClientGenerator {
     public var path: String {
         switch self {
         default:
-            return ""
+            return "/"
         }
     }
     
@@ -28,8 +28,9 @@ public enum OmdbAPI : BaseClientGenerator {
     public var queryItems: [URLQueryItem]?{
         var items: [URLQueryItem] = [.init(name: "apiKey", value: RemoteConstants.apiKey)]
         switch self {
-        case .search(let text):
+        case .search(let text, let page):
             items.append(.init(name: "s", value: text))
+            items.append(.init(name: "page", value: String(page)))
         }
         return items
     }

@@ -31,6 +31,7 @@ public enum Asset {
   public enum Images {
     public static let icCancel = ImageAsset(name: "ic_cancel")
     public static let icCircleCheck = ImageAsset(name: "ic_circle_check")
+    public static let imgDefaultPoster = ImageAsset(name: "img_default_poster")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import TinyConstraints
 
 public extension UICollectionView {
     
@@ -39,5 +40,30 @@ public extension UICollectionView {
             fatalError("Could not dequeue cell with identifier: \(T.reuseIdentifier)")
         }
         return cell
+    }
+    
+    func info(message: String) {
+        let emptyView = UIView(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
+        
+        let messageLabel: UILabel = {
+            let label = UILabel(frame: .zero)
+            label.font = .medium14
+            label.textColor = .appSnow
+            label.text = message
+            label.numberOfLines = 0
+            label.textAlignment = .center
+            label.sizeToFit()
+            return label
+        }()
+        
+        emptyView.addSubview(messageLabel)
+        messageLabel.centerYToSuperview()
+        messageLabel.horizontalToSuperview()
+
+        self.backgroundView = emptyView
+    }
+    
+    func restore() {
+        self.backgroundView = nil
     }
 }

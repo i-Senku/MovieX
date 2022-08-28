@@ -19,6 +19,14 @@
 		FEE0B87A28B9FF0100BB043D /* RemoteConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B87928B9FF0100BB043D /* RemoteConstants.swift */; };
 		FEE0B87D28BA001A00BB043D /* OmdbClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B87C28BA001A00BB043D /* OmdbClient.swift */; };
 		FEE0B89328BA09F900BB043D /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B89228BA09F900BB043D /* Connectivity.swift */; };
+		FEE0B8B428BAC63600BB043D /* OmdbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8B328BAC63600BB043D /* OmdbService.swift */; };
+		FEE0B8B628BAC64200BB043D /* OmdbServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8B528BAC64200BB043D /* OmdbServiceProtocol.swift */; };
+		FEE0B8BB28BAC69F00BB043D /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8BA28BAC69F00BB043D /* Search.swift */; };
+		FEE0B8BD28BAC6A500BB043D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8BC28BAC6A500BB043D /* Movie.swift */; };
+		FEE0B8BF28BAC8AB00BB043D /* MovieType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8BE28BAC8AB00BB043D /* MovieType.swift */; };
+		FEE0B8C228BACA8A00BB043D /* MovieRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8C128BACA8A00BB043D /* MovieRepositoryProtocol.swift */; };
+		FEE0B8C428BACA9300BB043D /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8C328BACA9300BB043D /* MovieRepository.swift */; };
+		FEE0B8C728BACC3500BB043D /* MovieError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8C628BACC3500BB043D /* MovieError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		FEE0B87928B9FF0100BB043D /* RemoteConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConstants.swift; sourceTree = "<group>"; };
 		FEE0B87C28BA001A00BB043D /* OmdbClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmdbClient.swift; sourceTree = "<group>"; };
 		FEE0B89228BA09F900BB043D /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		FEE0B8B328BAC63600BB043D /* OmdbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmdbService.swift; sourceTree = "<group>"; };
+		FEE0B8B528BAC64200BB043D /* OmdbServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmdbServiceProtocol.swift; sourceTree = "<group>"; };
+		FEE0B8BA28BAC69F00BB043D /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		FEE0B8BC28BAC6A500BB043D /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		FEE0B8BE28BAC8AB00BB043D /* MovieType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieType.swift; sourceTree = "<group>"; };
+		FEE0B8C128BACA8A00BB043D /* MovieRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepositoryProtocol.swift; sourceTree = "<group>"; };
+		FEE0B8C328BACA9300BB043D /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
+		FEE0B8C628BACC3500BB043D /* MovieError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +126,7 @@
 		FEE0B81E28B769C900BB043D /* DataProvider */ = {
 			isa = PBXGroup;
 			children = (
+				FEE0B8B728BAC66000BB043D /* Model */,
 				FEE0B89128BA09F100BB043D /* Utilities */,
 				FEE0B88E28BA090200BB043D /* Repository */,
 				FEE0B88D28BA08F400BB043D /* Services */,
@@ -160,6 +177,8 @@
 		FEE0B88D28BA08F400BB043D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FEE0B8B328BAC63600BB043D /* OmdbService.swift */,
+				FEE0B8B528BAC64200BB043D /* OmdbServiceProtocol.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -167,6 +186,7 @@
 		FEE0B88E28BA090200BB043D /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				FEE0B8C028BACA7B00BB043D /* MovieRepository */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -177,6 +197,50 @@
 				FEE0B89228BA09F900BB043D /* Connectivity.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FEE0B8B728BAC66000BB043D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FEE0B8C528BACBF000BB043D /* Error */,
+				FEE0B8B928BAC69400BB043D /* Search */,
+				FEE0B8B828BAC68D00BB043D /* Movie */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FEE0B8B828BAC68D00BB043D /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				FEE0B8BC28BAC6A500BB043D /* Movie.swift */,
+				FEE0B8BE28BAC8AB00BB043D /* MovieType.swift */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		FEE0B8B928BAC69400BB043D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				FEE0B8BA28BAC69F00BB043D /* Search.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		FEE0B8C028BACA7B00BB043D /* MovieRepository */ = {
+			isa = PBXGroup;
+			children = (
+				FEE0B8C128BACA8A00BB043D /* MovieRepositoryProtocol.swift */,
+				FEE0B8C328BACA9300BB043D /* MovieRepository.swift */,
+			);
+			path = MovieRepository;
+			sourceTree = "<group>";
+		};
+		FEE0B8C528BACBF000BB043D /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				FEE0B8C628BACC3500BB043D /* MovieError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,13 +379,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE0B8BB28BAC69F00BB043D /* Search.swift in Sources */,
 				FEE0B87328B9FE1300BB043D /* NetworkContracts.swift in Sources */,
+				FEE0B8BD28BAC6A500BB043D /* Movie.swift in Sources */,
 				FEE0B87D28BA001A00BB043D /* OmdbClient.swift in Sources */,
 				FEE0B89328BA09F900BB043D /* Connectivity.swift in Sources */,
+				FEE0B8C728BACC3500BB043D /* MovieError.swift in Sources */,
 				FEE0B87528B9FE2200BB043D /* NetworkError.swift in Sources */,
 				FEE0B87128B9FE0300BB043D /* HttpMethod.swift in Sources */,
 				FEE0B87A28B9FF0100BB043D /* RemoteConstants.swift in Sources */,
+				FEE0B8C428BACA9300BB043D /* MovieRepository.swift in Sources */,
 				FEE0B87728B9FE2E00BB043D /* NetworkExecuter.swift in Sources */,
+				FEE0B8B628BAC64200BB043D /* OmdbServiceProtocol.swift in Sources */,
+				FEE0B8C228BACA8A00BB043D /* MovieRepositoryProtocol.swift in Sources */,
+				FEE0B8B428BAC63600BB043D /* OmdbService.swift in Sources */,
+				FEE0B8BF28BAC8AB00BB043D /* MovieType.swift in Sources */,
 				FEE0B86F28B9FDFB00BB043D /* HttpHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

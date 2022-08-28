@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import DataProvider
 
 let app = AppContainer()
 
 final class AppContainer {
     
     let router = AppRouter()
+    let omdbService: OmdbServiceProtocol = OmdbService()
 }

@@ -13,6 +13,10 @@ public extension UIImage {
   static var icCircleCheck: UIImage {
       return Asset.Images.icCircleCheck.image
   }
+
+  static var imgDefaultPoster: UIImage {
+      return Asset.Images.imgDefaultPoster.image
+  }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

@@ -27,6 +27,7 @@
 		FEE0B8C228BACA8A00BB043D /* MovieRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8C128BACA8A00BB043D /* MovieRepositoryProtocol.swift */; };
 		FEE0B8C428BACA9300BB043D /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8C328BACA9300BB043D /* MovieRepository.swift */; };
 		FEE0B8C728BACC3500BB043D /* MovieError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8C628BACC3500BB043D /* MovieError.swift */; };
+		FEE0B8D928BB916A00BB043D /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8D828BB916A00BB043D /* MovieDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		FEE0B8C128BACA8A00BB043D /* MovieRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepositoryProtocol.swift; sourceTree = "<group>"; };
 		FEE0B8C328BACA9300BB043D /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
 		FEE0B8C628BACC3500BB043D /* MovieError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieError.swift; sourceTree = "<group>"; };
+		FEE0B8D828BB916A00BB043D /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 			children = (
 				FEE0B8BC28BAC6A500BB043D /* Movie.swift */,
 				FEE0B8BE28BAC8AB00BB043D /* MovieType.swift */,
+				FEE0B8D828BB916A00BB043D /* MovieDetail.swift */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				FEE0B8B628BAC64200BB043D /* OmdbServiceProtocol.swift in Sources */,
 				FEE0B8C228BACA8A00BB043D /* MovieRepositoryProtocol.swift in Sources */,
 				FEE0B8B428BAC63600BB043D /* OmdbService.swift in Sources */,
+				FEE0B8D928BB916A00BB043D /* MovieDetail.swift in Sources */,
 				FEE0B8BF28BAC8AB00BB043D /* MovieType.swift in Sources */,
 				FEE0B86F28B9FDFB00BB043D /* HttpHeader.swift in Sources */,
 			);

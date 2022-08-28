@@ -19,4 +19,8 @@ final public class OmdbService: OmdbServiceProtocol {
             responseModel: Search.self,
             completion: completion)
     }
+    
+    public func movieDetail(imdbId: String, completion: @escaping (Result<MovieDetail, NetworkError>) -> Void) {
+        NetworkExecuter.shared.execute(route: OmdbAPI.movieDetail(imdbId: imdbId), responseModel: MovieDetail.self, completion: completion)
+    }
 }

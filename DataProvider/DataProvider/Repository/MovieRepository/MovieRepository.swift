@@ -33,4 +33,19 @@ final public class MovieRepository: MovieRepositoryProtocol {
             }
         }
     }
+    
+    public func movieDetail(imdbId: String, completion: @escaping (Result<MovieDetail, MovieError>) -> Void) {
+        omdbService.movieDetail(imdbId: imdbId) { result in
+            switch result {
+            case .success(let movieDetail):
+                if movieDetail.responseStatus {
+                    return completion(.success(movieDetail))
+                } else {
+                    return completion(.failure(MovieError(message: "Something went wrong")))
+                }
+            case .failure(let error):
+                return completion(.failure(MovieError(message: error.localizedDescription)))
+            }
+        }
+    }
 }

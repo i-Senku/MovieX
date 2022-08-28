@@ -9,4 +9,5 @@ import Foundation
 
 public protocol OmdbServiceProtocol {
     func searchMovie(text: String, page: Int, completion: @escaping (Result<Search, NetworkError>) -> Void)
+    func movieDetail(imdbId: String, completion: @escaping (Result<MovieDetail, NetworkError>) -> Void)
 }

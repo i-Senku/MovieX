@@ -18,4 +18,4 @@ It's Movie app that using the OMDB API.
 ```
 
 # Screens
-<img height = 500 width = full src="images/home.png">  <img height = 500 width = full src="images/detail.png">
+<img height = 500 width = full src="images/home.png">  <img height = 500 width = full src="images/detail.png"> <img height = 500 width = full src="images/error.png">

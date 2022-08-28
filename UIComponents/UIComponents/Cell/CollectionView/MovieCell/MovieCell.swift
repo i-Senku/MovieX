@@ -67,7 +67,7 @@ extension MovieCell {
     
     private func configureContents() {
         guard let viewModel = viewModel else { return }
-        posterImageView.kf.setImage(with: viewModel.posterUrl, placeholder: UIImage.imgDefaultPoster)
+        posterImageView.kf.setImage(with: viewModel.poster?.supportedUrl, placeholder: UIImage.imgDefaultPoster)
         titleLabel.text = viewModel.title
     }
 }

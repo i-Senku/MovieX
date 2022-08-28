@@ -9,4 +9,5 @@ import Foundation
 
 public protocol MovieRepositoryProtocol {
     func search(text: String, page: Int, completion: @escaping (Result<Search, MovieError>) -> Void)
+    func movieDetail(imdbId: String, completion: @escaping (Result<MovieDetail, MovieError>) -> Void)
 }

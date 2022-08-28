@@ -34,6 +34,7 @@
 		FEE0B8A528BA429800BB043D /* MovieXLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8A428BA429800BB043D /* MovieXLoadingView.swift */; };
 		FEE0B8B128BABB0600BB043D /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8AF28BABB0600BB043D /* MovieCell.swift */; };
 		FEE0B8B228BABB0600BB043D /* MovieCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8B028BABB0600BB043D /* MovieCellModel.swift */; };
+		FEE0B8D728BB907400BB043D /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8D628BB907400BB043D /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		FEE0B8A428BA429800BB043D /* MovieXLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieXLoadingView.swift; sourceTree = "<group>"; };
 		FEE0B8AF28BABB0600BB043D /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		FEE0B8B028BABB0600BB043D /* MovieCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellModel.swift; sourceTree = "<group>"; };
+		FEE0B8D628BB907400BB043D /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 			children = (
 				FEE0B83A28B76B4100BB043D /* UICollectionView+Extensions.swift */,
 				FEE0B83C28B76B4900BB043D /* UITableView+Extensions.swift */,
+				FEE0B8D628BB907400BB043D /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				FEE0B86928B76E9600BB043D /* Fonts.swift in Sources */,
 				FEE0B83D28B76B4900BB043D /* UITableView+Extensions.swift in Sources */,
 				FEE0B86528B76E8C00BB043D /* UIColor+Colors.swift in Sources */,
+				FEE0B8D728BB907400BB043D /* String+Extensions.swift in Sources */,
 				FEE0B83B28B76B4100BB043D /* UICollectionView+Extensions.swift in Sources */,
 				FEE0B8A528BA429800BB043D /* MovieXLoadingView.swift in Sources */,
 				FEE0B86628B76E8C00BB043D /* Assets.swift in Sources */,

@@ -33,6 +33,9 @@
 		FEE0B8A828BA439000BB043D /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = FEE0B8A728BA439000BB043D /* loading.json */; };
 		FEE0B8AB28BAAEEE00BB043D /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8AA28BAAEEE00BB043D /* BaseNavigationController.swift */; };
 		FEE0B8CE28BB571A00BB043D /* MovieCellModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8CD28BB571A00BB043D /* MovieCellModel+Extension.swift */; };
+		FEE0B8D328BB875B00BB043D /* MovieDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8D028BB875B00BB043D /* MovieDetailRouter.swift */; };
+		FEE0B8D428BB875B00BB043D /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8D128BB875B00BB043D /* MovieDetailViewController.swift */; };
+		FEE0B8D528BB875B00BB043D /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B8D228BB875B00BB043D /* MovieDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -79,6 +82,9 @@
 		FEE0B8A728BA439000BB043D /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		FEE0B8AA28BAAEEE00BB043D /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		FEE0B8CD28BB571A00BB043D /* MovieCellModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieCellModel+Extension.swift"; sourceTree = "<group>"; };
+		FEE0B8D028BB875B00BB043D /* MovieDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailRouter.swift; sourceTree = "<group>"; };
+		FEE0B8D128BB875B00BB043D /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		FEE0B8D228BB875B00BB043D /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +157,7 @@
 			children = (
 				FE5C2A6128B6912000C2838A /* Base */,
 				FEE0B89C28BA40A500BB043D /* Home */,
+				FEE0B8CF28BB874100BB043D /* MovieDetail */,
 				FEE0B87E28BA02DA00BB043D /* Splash */,
 			);
 			path = Scene;
@@ -289,6 +296,16 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		FEE0B8CF28BB874100BB043D /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FEE0B8D028BB875B00BB043D /* MovieDetailRouter.swift */,
+				FEE0B8D128BB875B00BB043D /* MovieDetailViewController.swift */,
+				FEE0B8D228BB875B00BB043D /* MovieDetailViewModel.swift */,
+			);
+			path = MovieDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -406,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE0B8D328BB875B00BB043D /* MovieDetailRouter.swift in Sources */,
 				FE5C2A4128B6900E00C2838A /* AppDelegate.swift in Sources */,
 				FE889B7328B7644400D97D6A /* Closures.swift in Sources */,
 				FEE0B88228BA02F700BB043D /* SplashRouter.swift in Sources */,
@@ -418,8 +436,10 @@
 				FEE0B8AB28BAAEEE00BB043D /* BaseNavigationController.swift in Sources */,
 				FEE0B89828BA20CA00BB043D /* AppDelegate+Firebase.swift in Sources */,
 				FEE0B88A28BA04B500BB043D /* AppContainer.swift in Sources */,
+				FEE0B8D428BB875B00BB043D /* MovieDetailViewController.swift in Sources */,
 				FE5C2A6728B691A300C2838A /* BaseViewModel.swift in Sources */,
 				FE5C2A6528B6915400C2838A /* BaseViewController.swift in Sources */,
+				FEE0B8D528BB875B00BB043D /* MovieDetailViewModel.swift in Sources */,
 				FEE0B88828BA042E00BB043D /* AppRouter.swift in Sources */,
 				FEE0B8A228BA40B400BB043D /* HomeViewModel.swift in Sources */,
 				FEE0B88328BA02F700BB043D /* SplashViewController.swift in Sources */,

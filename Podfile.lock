@@ -45,6 +45,15 @@ PODS:
     - GoogleUtilities/Environment (~> 7.7)
     - GoogleUtilities/UserDefaults (~> 7.7)
     - PromisesObjC (~> 2.1)
+  - FirebaseMessaging (9.3.0):
+    - FirebaseCore (~> 9.0)
+    - FirebaseInstallations (~> 9.0)
+    - GoogleDataTransport (< 10.0.0, >= 9.1.4)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GoogleUtilities/Reachability (~> 7.7)
+    - GoogleUtilities/UserDefaults (~> 7.7)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
   - FirebaseRemoteConfig (9.3.0):
     - FirebaseABTesting (~> 9.0)
     - FirebaseCore (~> 9.0)
@@ -110,6 +119,7 @@ DEPENDENCIES:
   - Alamofire (~> 5.4)
   - Firebase/Core
   - Firebase/RemoteConfig
+  - FirebaseMessaging
   - Kingfisher (from `https://github.com/onevcat/Kingfisher`, branch `version6-xcode13`)
   - lottie-ios
   - SwiftEntryKit (= 2.0.0)
@@ -126,6 +136,7 @@ SPEC REPOS:
     - FirebaseCoreDiagnostics
     - FirebaseCoreInternal
     - FirebaseInstallations
+    - FirebaseMessaging
     - FirebaseRemoteConfig
     - GoogleAppMeasurement
     - GoogleDataTransport
@@ -156,6 +167,7 @@ SPEC CHECKSUMS:
   FirebaseCoreDiagnostics: 060eb57cc56dfaf40b1b1b5874a5c17c41ce79f8
   FirebaseCoreInternal: 635d1c9a612a6502b6377a0c92af83758076ffff
   FirebaseInstallations: 54b40022cb06e462740c9f2b9fbe38b5e78a825a
+  FirebaseMessaging: 2f6e38b6133059eb796ec224104f09379298a8c3
   FirebaseRemoteConfig: 0a644c924b3339bcf3bc3ea253206f171672308e
   GoogleAppMeasurement: b907bdad775b6975a8108762345b2cfbf1a93c37
   GoogleDataTransport: 1c8145da7117bd68bbbed00cf304edb6a24de00f
@@ -168,6 +180,6 @@ SPEC CHECKSUMS:
   SwiftGen: a6d22010845f08fe18fbdf3a07a8e380fd22e0ea
   TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
 
-PODFILE CHECKSUM: 299f37ea6e256adf821bb39c87d4114da011b75b
+PODFILE CHECKSUM: 0f14fb714ea805e65721b3fe9307947b1009253b
 
 COCOAPODS: 1.11.3

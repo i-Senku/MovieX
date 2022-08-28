@@ -27,6 +27,7 @@ target 'MovieX' do
   # Helper
   pod 'Firebase/RemoteConfig'
   pod 'Firebase/Core'
+  pod 'FirebaseMessaging'
 
 end
 

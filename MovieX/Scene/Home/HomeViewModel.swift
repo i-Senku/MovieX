@@ -24,12 +24,18 @@ protocol HomeViewProtocol: HomeViewDataSource, HomeViewEventSource {
     func viewDidLoad()
     func search(text: String)
     func startPagination()
+    func didSelect(indexPath: IndexPath)
+}
+
+protocol HomeViewRouteDelegate: AnyObject {
+    func showDetail(movie: Movie)
 }
 
 final class HomeViewModel: BaseViewModel, HomeViewProtocol {
     
     // Privates
-    private var items: [MovieCellProtocol] = []
+    private var cellItems: [MovieCellProtocol] = []
+    private var movieItems: [Movie] = []
     private var searchTimer: Timer?
     private var page: Int = 1
     private var text: String = ""
@@ -40,6 +46,7 @@ final class HomeViewModel: BaseViewModel, HomeViewProtocol {
     
     // DataSource
     var movieRepository: MovieRepositoryProtocol
+    weak var routeDelegate: HomeViewRouteDelegate?
     
     public init(movieRepository: MovieRepositoryProtocol) {
         self.movieRepository = movieRepository
@@ -48,17 +55,22 @@ final class HomeViewModel: BaseViewModel, HomeViewProtocol {
     func viewDidLoad() {
         reloadData?("You can search movies")
     }
+    
+    func didSelect(indexPath: IndexPath) {
+        let movie = movieItems[indexPath.row]
+        routeDelegate?.showDetail(movie: movie)
+    }
 }
 
 // MARK: - DataSource
 extension HomeViewModel {
     
     var numberOfItems: Int {
-        return items.count
+        return cellItems.count
     }
     
     func cellForItemAt(indexPath: IndexPath) -> MovieCellProtocol {
-        return items[indexPath.row]
+        return cellItems[indexPath.row]
     }
 }
 
@@ -78,18 +90,19 @@ extension HomeViewModel {
                     self.hideLoading?()
                     switch result {
                     case .success(let searchResponse):
-                        self.items = searchResponse.movieList?.map { MovieCellModel(movie: $0) } ?? []
-                        self.searchable = self.items.count < searchResponse.totalCount
+                        self.cellItems = searchResponse.movieList?.map { MovieCellModel(movie: $0) } ?? []
+                        self.movieItems = searchResponse.movieList ?? []
+                        self.searchable = self.cellItems.count < searchResponse.totalCount
                         self.reloadData?(nil)
                     case .failure(let error):
-                        self.items.removeAll()
+                        self.cellItems.removeAll()
                         self.reloadData?(error.message)
                         EntryKitHelper.show(error.message, type: .error)
                     }
                 }
             })
         } else {
-            self.items.removeAll()
+            self.cellItems.removeAll()
             reloadData?("You can search movies")
         }
     }
@@ -105,8 +118,9 @@ extension HomeViewModel {
                 switch result {
                 case .success(let searchResponse):
                     let movieList = searchResponse.movieList?.map { MovieCellModel(movie: $0) } ?? []
-                    self.items.append(contentsOf: movieList)
-                    self.searchable = self.items.count < searchResponse.totalCount
+                    self.movieItems.append(contentsOf: searchResponse.movieList ?? [])
+                    self.cellItems.append(contentsOf: movieList)
+                    self.searchable = self.cellItems.count < searchResponse.totalCount
                     self.reloadData?(nil)
                 case .failure(let error):
                     self.searchable = false

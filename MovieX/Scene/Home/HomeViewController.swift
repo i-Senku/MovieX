@@ -8,6 +8,7 @@
 import UIKit
 import TinyConstraints
 import UIComponents
+import DataProvider
 
 final class HomeViewController: BaseViewController<HomeViewModel> {
     
@@ -98,7 +99,7 @@ extension HomeViewController: UISearchBarDelegate {
 extension HomeViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        viewModel.didSelect(indexPath: indexPath)
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -116,7 +117,6 @@ extension HomeViewController: UICollectionViewDataSource {
         return viewModel.numberOfItems
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: MovieCell = collectionView.dequeueReusableCell(for: indexPath)
         cell.set(viewModel: viewModel.cellForItemAt(indexPath: indexPath))
@@ -124,7 +124,7 @@ extension HomeViewController: UICollectionViewDataSource {
     }
 }
 
-// MARK: -
+// MARK: - UICollectionViewDelegateFlowLayout
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -142,5 +142,14 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return .horizontal(8)
+    }
+}
+
+// MARK: - HomeViewC
+extension HomeViewController: HomeViewRouteDelegate {
+    
+    func showDetail(movie: Movie) {
+        let viewController = MovieDetailRouter.create(movie: movie)
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }

@@ -14,6 +14,7 @@ final class HomeRouter {
         let movieRepository = MovieRepository(omdbService: app.omdbService)
         let viewModel = HomeViewModel(movieRepository: movieRepository)
         let viewController = HomeViewController(viewModel: viewModel)
+        viewModel.routeDelegate = viewController
         let navigationController = BaseNavigationController(rootViewController: viewController)
         return navigationController
     }

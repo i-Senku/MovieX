@@ -11,6 +11,7 @@ public enum OmdbAPI : BaseClientGenerator {
     
     // MARK: - Requests
     case search(text: String, page: Int)
+    case movieDetail(imdbId: String)
     
     public var scheme: String { "https" }
     
@@ -31,6 +32,8 @@ public enum OmdbAPI : BaseClientGenerator {
         case .search(let text, let page):
             items.append(.init(name: "s", value: text))
             items.append(.init(name: "page", value: String(page)))
+        case .movieDetail(let imdbId):
+            items.append(.init(name: "i", value: imdbId))
         }
         return items
     }

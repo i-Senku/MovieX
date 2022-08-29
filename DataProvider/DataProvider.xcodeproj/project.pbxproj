@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C34E3319A63BACAA92D32593 /* libPods-DataProvider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF32C790942FE37B634F9E8 /* libPods-DataProvider.a */; };
+		D9ADA2D44BB07265BEDB0839 /* libPods-DataProviderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E992ED277C387F356C8398B /* libPods-DataProviderTests.a */; };
 		FEE0B82528B769C900BB043D /* DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEE0B81C28B769C900BB043D /* DataProvider.framework */; };
 		FEE0B82A28B769C900BB043D /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0B82928B769C900BB043D /* DataProviderTests.swift */; };
 		FEE0B82B28B769C900BB043D /* DataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE0B81F28B769C900BB043D /* DataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,8 +43,11 @@
 
 /* Begin PBXFileReference section */
 		30F19BF62BFB9B66594F84FE /* Pods-DataProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataProvider.release.xcconfig"; path = "Target Support Files/Pods-DataProvider/Pods-DataProvider.release.xcconfig"; sourceTree = "<group>"; };
+		6E992ED277C387F356C8398B /* libPods-DataProviderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DataProviderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF32C790942FE37B634F9E8 /* libPods-DataProvider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DataProvider.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1253F5633EF979BE1569B74 /* Pods-DataProviderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataProviderTests.release.xcconfig"; path = "Target Support Files/Pods-DataProviderTests/Pods-DataProviderTests.release.xcconfig"; sourceTree = "<group>"; };
 		BA6959F62BE6CFD5F1A0FE89 /* Pods-DataProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataProvider.debug.xcconfig"; path = "Target Support Files/Pods-DataProvider/Pods-DataProvider.debug.xcconfig"; sourceTree = "<group>"; };
+		F0A17AA967611B61500B8334 /* Pods-DataProviderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataProviderTests.debug.xcconfig"; path = "Target Support Files/Pods-DataProviderTests/Pods-DataProviderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FEE0B81C28B769C900BB043D /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE0B81F28B769C900BB043D /* DataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataProvider.h; sourceTree = "<group>"; };
 		FEE0B82428B769C900BB043D /* DataProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEE0B82528B769C900BB043D /* DataProvider.framework in Frameworks */,
+				D9ADA2D44BB07265BEDB0839 /* libPods-DataProviderTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +97,8 @@
 			children = (
 				BA6959F62BE6CFD5F1A0FE89 /* Pods-DataProvider.debug.xcconfig */,
 				30F19BF62BFB9B66594F84FE /* Pods-DataProvider.release.xcconfig */,
+				F0A17AA967611B61500B8334 /* Pods-DataProviderTests.debug.xcconfig */,
+				B1253F5633EF979BE1569B74 /* Pods-DataProviderTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -101,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				AAF32C790942FE37B634F9E8 /* libPods-DataProvider.a */,
+				6E992ED277C387F356C8398B /* libPods-DataProviderTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -283,6 +291,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEE0B83128B769C900BB043D /* Build configuration list for PBXNativeTarget "DataProviderTests" */;
 			buildPhases = (
+				2E47690AE4A93108FDC435CF /* [CP] Check Pods Manifest.lock */,
 				FEE0B82028B769C900BB043D /* Sources */,
 				FEE0B82128B769C900BB043D /* Frameworks */,
 				FEE0B82228B769C900BB043D /* Resources */,
@@ -353,6 +362,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2E47690AE4A93108FDC435CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DataProviderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C48D91EA30E9D313214CB979 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -604,6 +635,7 @@
 		};
 		FEE0B83228B769C900BB043D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0A17AA967611B61500B8334 /* Pods-DataProviderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -621,6 +653,7 @@
 		};
 		FEE0B83328B769C900BB043D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1253F5633EF979BE1569B74 /* Pods-DataProviderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

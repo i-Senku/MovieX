@@ -1,0 +1,76 @@
+{
+    "Search": [
+        {
+            "Title": "Naruto: Shippûden",
+            "Year": "2007–2017",
+            "imdbID": "tt0988824",
+            "Type": "series",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BZGFiMWFhNDAtMzUyZS00NmQ2LTljNDYtMmZjNTc5MDUxMzViXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Naruto",
+            "Year": "2002–2007",
+            "imdbID": "tt0409591",
+            "Type": "series",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMDI3ZDY4MDgtN2U2OS00Y2YzLWJmZmYtZWMzOTM3YWFjYmUyXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Boruto: Naruto Next Generations",
+            "Year": "2017–",
+            "imdbID": "tt6342474",
+            "Type": "series",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYjM0MDRkYzctMTNhMS00ODYwLTgwMWItZDYxNDlhOGY1YjRlXkEyXkFqcGdeQXVyMzExMzk5MTQ@._V1_SX300.jpg"
+        },
+        {
+            "Title": "The Last: Naruto the Movie",
+            "Year": "2014",
+            "imdbID": "tt3717532",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMjk1NzA4Njg4Ml5BMl5BanBnXkFtZTgwMDgxODQ5MzE@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Boruto: Naruto The Movie",
+            "Year": "2015",
+            "imdbID": "tt4618398",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNDIwYjg5YzItZTJmMC00YjJhLWFiNjYtMDU5MmQxOTQxODM2XkEyXkFqcGdeQXVyMjc2Nzg5OTQ@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Road to Ninja - Naruto the Movie",
+            "Year": "2012",
+            "imdbID": "tt2290828",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ5MTcyNDYwMV5BMl5BanBnXkFtZTgwNzMzNzc0MjE@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Naruto the Movie: Ninja Clash in the Land of Snow",
+            "Year": "2004",
+            "imdbID": "tt0476680",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYWFkMTJjODEtMjY2NC00OGRiLThkYjMtMzBjMzVhY2FlZTEyXkEyXkFqcGdeQXVyNjYwMjkwMjg@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Naruto Shippuden the Movie: Blood Prison",
+            "Year": "2011",
+            "imdbID": "tt1999167",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMDgyZmRkYjUtMWExNS00NDQyLTliZTMtOTkwY2M3ZWU0ZjNmXkEyXkFqcGdeQXVyMjc2Nzg5OTQ@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Naruto Shippuden: The Movie - Bonds",
+            "Year": "2008",
+            "imdbID": "tt1160524",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNTE2ODAyNTkxNl5BMl5BanBnXkFtZTgwNTAzMjA2MDE@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Naruto the Movie 2: Legend of the Stone of Gelel",
+            "Year": "2005",
+            "imdbID": "tt0791188",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMDE3NjY3Y2MtODE4YS00YzFiLThhMTMtY2Q1NTZkODE4M2NlXkEyXkFqcGdeQXVyNjYwMjkwMjg@._V1_SX300.jpg"
+        }
+    ],
+    "totalResults": "91",
+    "Response": "True"
+}

@@ -29,6 +29,11 @@ target 'MovieX' do
   pod 'Firebase/Core'
   pod 'FirebaseMessaging'
 
+  target 'MovieXTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
 end
 
 target 'UIComponents' do
@@ -44,6 +49,11 @@ target 'UIComponents' do
   # UI
   pod 'lottie-ios'
 
+  target 'UIComponentsTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
 end
 
 target 'DataProvider' do
@@ -54,5 +64,10 @@ target 'DataProvider' do
   
   # Network
   pod 'Alamofire', '~> 5.4'
+
+  target 'DataProviderTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
 
 end
